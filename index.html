@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acervo Devocional de Bordados Sagrados — más de 100 matrices de bordado católico listas para usar en cualquier máquina. Acceso de por vida desde USD $7,90." />
+  <title>Acervo Devocional de Bordados Sagrados — Más de 100 Matrices Listas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   '#1E3A5F',
+            secondary: '#EE6352',
+            success:   '#189700',
+            cream:     '#F6F3EC',
+            skyfade:   '#E8F1FF',
+            surface:   '#EFF1F5',
+          },
+          fontFamily: {
+            sans:    ['Manrope', 'sans-serif'],
+            heading: ['Inter', 'sans-serif'],
+          },
+          letterSpacing: { tightx: '-0.1px' },
+          boxShadow: {
+            soft:  '0 40px 80px rgba(217, 119, 87, 0.24)',
+            card:  '0 10px 30px rgba(30, 58, 95, 0.10)',
+            cta:   '0 12px 24px rgba(24, 151, 0, 0.35)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Manrope', sans-serif; color: #111; }
+    h1, h2, h3, h4 { font-family: 'Inter', sans-serif; }
+    .hero-gradient { background: linear-gradient(180deg, #F6F3EC 0%, #E8F1FF 100%); }
+    .cta-pulse { animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 12px 24px rgba(24,151,0,0.35); }
+      50%      { transform: scale(1.03); box-shadow: 0 16px 32px rgba(24,151,0,0.5); }
+    }
+    .pill { border-radius: 180px; }
+    .placeholder-img {
+      background: repeating-linear-gradient(45deg, #f0e9d6, #f0e9d6 12px, #e6dec5 12px, #e6dec5 24px);
+      display: flex; align-items: center; justify-content: center;
+      color: #1E3A5F; font-weight: 700;
+    }
+    /* Carrossel */
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .carousel-arrow {
+      background: #fff; color: #1E3A5F; width: 48px; height: 48px;
+      border-radius: 9999px; display: none; align-items: center; justify-content: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: transform .2s ease;
+    }
+    .carousel-arrow:hover { transform: scale(1.1); }
+    @media (min-width: 768px) { .carousel-arrow { display: flex; } }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2486824241743289');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2486824241743289&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body class="bg-white antialiased">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero-gradient pt-12 pb-20 px-5 flex flex-col items-center text-center">
+    <span class="bg-success text-white pill px-4 py-2.5 text-sm sm:text-base font-semibold inline-flex items-center gap-2">
+      <span aria-hidden="true">🔒</span> COMPRA 100% SEGURA Y PROTEGIDA
+    </span>
+
+    <h1 class="font-heading font-extrabold uppercase text-primary tracking-tightx max-w-4xl mt-8
+               text-[34px] leading-[1.05] sm:text-[44px] md:text-[54px] lg:text-[60px] lg:leading-[1]">
+      Más de 100 Matrices de Bordado Católico Listas Para Usar En Tu Máquina Hoy Mismo
+    </h1>
+
+    <p class="italic font-bold text-[#242424] mt-6 text-lg sm:text-xl">
+      Compatible con las principales máquinas domésticas y profesionales
+    </p>
+
+    <p class="max-w-2xl mt-6 text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+      Deja de perder horas digitalizando diseño por diseño. Recibe ahora el acervo completo,
+      organizado por categoría y listo para bordar — <strong>del altar a la sacristía</strong>.
+    </p>
+
+    <!-- Mockup do produto -->
+    <div class="mt-10 w-full max-w-lg">
+      <img src="variacao_dibujos_catolicos_es.png"
+           alt="+100 Dibujos Católicos — Acervo Devocional de Bordados Sagrados"
+           class="w-full h-auto rounded-2xl shadow-soft"
+           loading="eager" />
+    </div>
+
+    <a href="#oferta"
+       class="cta-pulse inline-block mt-10 bg-success hover:bg-[#137A00] text-white font-bold uppercase
+              rounded-xl px-8 py-5 text-lg sm:text-xl tracking-tightx transition-colors">
+      QUIERO MI ACERVO AHORA · PAGO EN MONEDA LOCAL
+    </a>
+
+    <p class="mt-4 text-sm text-[#1F1F1F]/70">
+      Acceso inmediato tras la compra • Garantía incondicional de 7 días
+    </p>
+  </section>
+
+  <!-- ===================== DOR / IDENTIFICAÇÃO ===================== -->
+  <section class="bg-white py-20 px-5">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-heading font-extrabold uppercase text-[#242424] tracking-tightx
+                 text-[28px] sm:text-[36px] md:text-[44px] leading-tight">
+        Si eres bordadora, esto ya te ha pasado...
+      </h2>
+
+      <div class="mt-10 space-y-5 text-left">
+        <div class="flex gap-4 items-start bg-cream rounded-xl p-5">
+          <span class="text-secondary text-2xl leading-none" aria-hidden="true">✗</span>
+          <p class="text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+            Perdiste <strong>horas buscando una matriz buena</strong> en grupos de WhatsApp,
+            descargaste un archivo dañado y encima gastaste hilo en vano.
+          </p>
+        </div>
+        <div class="flex gap-4 items-start bg-cream rounded-xl p-5">
+          <span class="text-secondary text-2xl leading-none" aria-hidden="true">✗</span>
+          <p class="text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+            Rechazaste un pedido de paramento, escapulario o bolsita de oración porque
+            <strong>no tenías el diseño a la mano</strong>.
+          </p>
+        </div>
+        <div class="flex gap-4 items-start bg-cream rounded-xl p-5">
+          <span class="text-secondary text-2xl leading-none" aria-hidden="true">✗</span>
+          <p class="text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+            Pagaste caro por matrices sueltas ($5, $10, $15 cada una) y aun así
+            <strong>te quedaste atada a un solo estilo</strong>.
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-10 text-xl sm:text-2xl text-primary font-bold">
+        ¿Y si hoy tuvieras <span class="text-secondary">todo esto resuelto</span>
+        por menos de lo que cuesta un café?
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== APRESENTAÇÃO DA SOLUÇÃO ===================== -->
+  <section class="bg-cream py-20 px-5">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="text-secondary font-bold uppercase tracking-widest text-sm">La solución definitiva</span>
+      <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx mt-4
+                 text-[32px] sm:text-[42px] md:text-[52px] leading-[1.05]">
+        Acervo Devocional de Bordados Sagrados
+      </h2>
+      <p class="mt-6 text-xl text-[#1F1F1F] leading-relaxed">
+        Un acervo curado con <strong>más de 100 matrices</strong> de bordado católico ya digitalizadas,
+        probadas y organizadas por categoría — listo para abrir y bordar.
+      </p>
+      <p class="mt-4 text-lg text-[#1F1F1F]/80">
+        Sin búsquedas. Sin archivos rotos. Sin perder ventas.
+      </p>
+
+      <!-- Categorias -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 text-left">
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Sagrados Corazones</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Jesús y María</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Vírgenes</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Guadalupe, Fátima, Aparecida y más</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Santos Patronos</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Antonio, Benito, Rita, Jorge…</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Símbolos Litúrgicos</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Cáliz, hostia, IHS, cruces</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Ángeles y Querubines</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Para bautismo y primera comunión</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Frases de Fe</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Versículos y oraciones</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Espíritu Santo</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Paloma y llamas en variaciones</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Fechas Especiales</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Navidad, Pascua y bautismo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA / O QUE RECEBE (CARROSSEL) ===================== -->
+  <section class="bg-primary py-20 overflow-hidden">
+    <div class="max-w-6xl mx-auto text-center px-5">
+      <span class="text-secondary font-bold uppercase tracking-widest text-sm">Lo que vas a recibir</span>
+      <h2 class="font-heading font-extrabold uppercase text-white tracking-tightx mt-3
+                 text-[32px] sm:text-[42px] md:text-[52px] leading-[1.05]">
+        Mira algunos de los bordados que vas a llevarte
+      </h2>
+      <p class="mt-6 text-white/80 text-lg">
+        Cada matriz fue probada en máquina antes de entrar al acervo.
+      </p>
+    </div>
+
+    <!-- Grid empilhado -->
+    <div class="mt-12 max-w-6xl mx-auto px-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.jpeg"
+             alt="Bordado católico — diseño 1" loading="lazy"
+             class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        <img src="imagens/986d5279e1fd90e39ab8a3e77f86ef9b.jpeg"
+             alt="Bordado católico — diseño 2" loading="lazy"
+             class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        <img src="imagens/image-1.jpeg"
+             alt="Bordado católico — diseño 3" loading="lazy"
+             class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        <img src="imagens/image-2.jpeg"
+             alt="Bordado católico — diseño 4" loading="lazy"
+             class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        <img src="imagens/image-4.jpeg"
+             alt="Bordado católico — diseño 5" loading="lazy"
+             class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20 sm:col-span-2 lg:col-span-4 lg:max-w-sm lg:mx-auto" />
+      </div>
+    </div>
+
+    <div class="text-center mt-12 px-5">
+      <a href="#oferta"
+         class="inline-block bg-secondary hover:bg-[#E14C3A] text-white font-bold uppercase
+                rounded-xl px-8 py-4 text-lg transition-colors">
+        QUIERO EL ACERVO COMPLETO
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFÍCIOS ===================== -->
+  <section class="bg-white py-20 px-5">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-heading font-extrabold uppercase text-[#242424] tracking-tightx text-center
+                 text-[28px] sm:text-[36px] md:text-[44px] leading-tight">
+        Lo que cambia en tu rutina a partir de hoy
+      </h2>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mt-14">
+        <!-- Relógio: Más tempo livre -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto bg-cream rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 2" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-secondary text-xl mt-5">Más tiempo libre</h3>
+          <p class="text-base text-[#1F1F1F] leading-7 mt-3">
+            Se acabó la búsqueda. Abres, eliges y bordas — recuperas horas por semana.
+          </p>
+        </div>
+
+        <!-- Velocidade: Atende mais pedidos -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto bg-cream rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0-9-9" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 12l5-3" />
+              <circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-secondary text-xl mt-5">Atiende más pedidos</h3>
+          <p class="text-base text-[#1F1F1F] leading-7 mt-3">
+            Nunca más pierdas un encargo por falta de diseño. Diversifica y cobra más.
+          </p>
+        </div>
+
+        <!-- Escudo: Más segurança -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto bg-cream rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-secondary text-xl mt-5">Más seguridad</h3>
+          <p class="text-base text-[#1F1F1F] leading-7 mt-3">
+            Matrices probadas, trazo limpio y acabado de tienda de paramentos.
+          </p>
+        </div>
+
+        <!-- Liberdade: Mais independência -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto bg-cream rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12c1.5-4 5-6 9-6s7.5 2 9 6" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12v3a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3v-3" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 12v3a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3v-3" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-secondary text-xl mt-5">Más independencia</h3>
+          <p class="text-base text-[#1F1F1F] leading-7 mt-3">
+            Trabaja desde casa, a tu ritmo, con ingresos extra todos los meses.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BÔNUS ===================== -->
+  <section class="bg-cream py-20 px-5">
+    <div class="max-w-5xl mx-auto text-center">
+      <span class="text-secondary font-bold uppercase tracking-widest text-sm">Y además recibes</span>
+      <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx mt-4
+                 text-[32px] sm:text-[42px] md:text-[52px] leading-[1.05]">
+        5 Bonos que valen más que el propio acervo
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-12 text-left">
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary">
+          <span class="text-xs font-bold text-secondary uppercase">Bono 01</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Paquete Fiestas Litúrgicas</h3>
+          <p class="text-[#1F1F1F] mt-2">+30 matrices temáticas de Navidad, Pascua, Pentecostés y fiestas patronales.</p>
+          <p class="text-success font-bold mt-3">De $14 → gratis</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary">
+          <span class="text-xs font-bold text-secondary uppercase">Bono 02 ★</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Diseños Litúrgicos</h3>
+          <p class="text-[#1F1F1F] mt-2">+25 matrices exclusivas de símbolos sagrados: cálices, hostias, custodias, vestiduras, candelabros, palomas y elementos del altar.</p>
+          <p class="text-success font-bold mt-3">De $19 → gratis</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary">
+          <span class="text-xs font-bold text-secondary uppercase">Bono 03</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Guía de Hilos y Telas</h3>
+          <p class="text-[#1F1F1F] mt-2">Qué hilo y qué tela usar en cada pieza (paramento, bolsita, manto, escapulario).</p>
+          <p class="text-success font-bold mt-3">De $11 → gratis</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary">
+          <span class="text-xs font-bold text-secondary uppercase">Bono 04</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Tabla de Precios Sugeridos</h3>
+          <p class="text-[#1F1F1F] mt-2">Sabe exactamente cuánto cobrar por cada tipo de bordado religioso en tu región.</p>
+          <p class="text-success font-bold mt-3">De $17 → gratis</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary md:col-span-2">
+          <span class="text-xs font-bold text-secondary uppercase">Bono 05</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Actualizaciones de Por Vida</h3>
+          <p class="text-[#1F1F1F] mt-2">Toda matriz nueva que entre al acervo cae automáticamente en tu acceso. Para siempre.</p>
+          <p class="text-success font-bold mt-3">Valor: incalculable</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OFERTA ÚNICA ===================== -->
+  <section id="oferta" class="bg-white py-20 px-5">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="bg-secondary text-white pill px-4 py-2 text-sm font-bold uppercase">
+          Oferta única — solo hoy
+        </span>
+        <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx mt-6
+                   text-[30px] sm:text-[38px] md:text-[46px] leading-[1.05]">
+          Todo esto por menos de una matriz suelta
+        </h2>
+
+        <!-- Selos de destaque -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-8">
+          <span class="inline-flex items-center gap-1.5 bg-yellow-100 text-yellow-900 border border-yellow-300 pill px-3 py-1.5 text-xs sm:text-sm font-bold uppercase">
+            <span class="text-yellow-500" aria-hidden="true">⚡</span> Acceso inmediato
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-red-100 text-red-800 border border-red-300 pill px-3 py-1.5 text-xs sm:text-sm font-bold uppercase">
+            <span aria-hidden="true">🔥</span> 5 Bonos exclusivos
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-yellow-100 text-yellow-900 border border-yellow-300 pill px-3 py-1.5 text-xs sm:text-sm font-bold uppercase">
+            <span class="text-yellow-500" aria-hidden="true">⚡</span> Más vendido
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-gray-900 text-white pill px-3 py-1.5 text-xs sm:text-sm font-bold uppercase">
+            <span aria-hidden="true">⏰</span> Última oportunidad
+          </span>
+        </div>
+      </div>
+
+      <!-- CARD ÚNICO -->
+      <div class="bg-gradient-to-b from-cream to-white border-4 border-success rounded-2xl p-8 sm:p-10 shadow-card relative">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-success text-white px-5 py-1.5 rounded-full text-sm font-bold uppercase whitespace-nowrap">
+          ★ Paquete completo
+        </div>
+
+        <!-- Imagem do produto -->
+        <div class="mt-4 max-w-sm mx-auto">
+          <img src="fcf709ec-7e60-44c0-97c7-3eb8569a7ae2.png"
+               alt="+100 Dibujos Católicos — Paquete completo"
+               class="w-full h-auto rounded-xl shadow-card"
+               loading="lazy" />
+        </div>
+
+        <h3 class="font-heading font-extrabold text-primary text-center text-2xl sm:text-3xl mt-6">
+          Acervo Devocional Sagrado + 5 Bonos
+        </h3>
+
+        <ul class="mt-8 space-y-3 text-[#1F1F1F]">
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> +100 matrices de bordado católico organizadas por categoría</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Bono 1: Paquete Fiestas Litúrgicas (+30 matrices)</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> <strong>Bono 2: Diseños Litúrgicos (+25 matrices de cálices, hostias, custodias y símbolos del altar)</strong></li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Bono 3: Guía de Hilos y Telas</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Bono 4: Tabla de Precios Sugeridos</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Bono 5: Actualizaciones de por vida del acervo</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Acceso inmediato tras el pago</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Compatible con las principales máquinas (.PES .DST .JEF .EXP .VP3)</li>
+        </ul>
+
+        <div class="mt-8 text-center border-t border-dashed border-primary/20 pt-6">
+          <p class="text-[#1F1F1F]/60 line-through text-lg">Antes $59,00</p>
+          <p class="text-sm uppercase font-bold text-secondary mt-1">Solo por hoy</p>
+          <p class="font-heading font-extrabold text-primary text-5xl sm:text-6xl mt-1">
+            USD $7<span class="text-3xl">,90</span>
+          </p>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Pago único · acceso de por vida</p>
+        </div>
+
+        <a href="https://pay.hotmart.com/L106190324Q?checkoutMode=10"
+           target="_blank" rel="noopener"
+           class="cta-pulse block text-center mt-8 bg-success hover:bg-[#137A00] text-white font-bold uppercase
+                  rounded-xl px-6 py-5 text-base sm:text-lg tracking-tightx transition-colors leading-tight">
+          QUIERO ACCESO AHORA<br/>
+          <span class="text-sm font-semibold normal-case opacity-90">Pago en tu moneda local</span>
+        </a>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-6 text-sm text-[#1F1F1F]/70">
+          <span class="inline-flex items-center gap-1"><span aria-hidden="true">🔒</span> Compra segura</span>
+          <span>•</span>
+          <span class="inline-flex items-center gap-1"><span class="text-yellow-500" aria-hidden="true">⚡</span> Acceso inmediato</span>
+          <span>•</span>
+          <span class="inline-flex items-center gap-1"><span aria-hidden="true">🛡️</span> 7 días de garantía</span>
+        </div>
+
+        <!-- Como você recebe -->
+        <div class="mt-6 flex items-center justify-center gap-2 text-sm text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6" />
+          </svg>
+          <span class="font-semibold">Recibes todo al instante en tu correo electrónico</span>
+        </div>
+
+        <!-- Pago en moneda local -->
+        <div class="mt-6 border-t border-dashed border-primary/15 pt-5">
+          <div class="bg-primary/5 border-2 border-dashed border-primary/30 rounded-xl p-4 sm:p-5 flex items-center gap-4">
+            <div class="shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+              </svg>
+            </div>
+            <div class="text-left">
+              <p class="font-heading font-extrabold uppercase text-primary text-base sm:text-lg tracking-tightx leading-tight">
+                Pagas en tu moneda local
+              </p>
+              <p class="text-sm text-[#1F1F1F]/80 mt-1 leading-snug">
+                Hotmart convierte el valor automáticamente: <strong>peso mexicano, peso colombiano, peso argentino, sol, real</strong> y más.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GARANTIA ===================== -->
+  <section class="bg-surface py-20 px-5">
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl p-8 sm:p-12 shadow-card text-center">
+      <div class="w-24 h-24 mx-auto bg-success/10 rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+        </svg>
+      </div>
+      <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx mt-6
+                 text-[26px] sm:text-[34px] md:text-[40px] leading-tight">
+        Garantía incondicional de 7 días
+      </h2>
+      <p class="mt-6 text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+        Accede al acervo, descarga las matrices, pruébalas en tu máquina. Si en <strong>7 días</strong>
+        sientes que no vale la inversión, te devolvemos <strong>el 100% del valor pagado</strong>
+        sin preguntas y sin trámites. El riesgo lo asumimos nosotros.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="bg-white py-20 px-5">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-heading font-extrabold uppercase text-[#242424] tracking-tightx text-center
+                 text-[28px] sm:text-[36px] md:text-[44px] leading-tight">
+        Lo que dicen las bordadoras que ya tienen el acervo
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                 alt="Foto de María de los Ángeles"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" />
+            <div>
+              <p class="font-bold text-primary leading-tight">María de los Ángeles</p>
+              <p class="text-xs text-[#1F1F1F]/60">Guadalajara, México</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "En una semana ya había pagado la inversión bordando recuerdos de bautismo.
+            Las matrices son limpias y el acabado es como de tienda."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg"
+                 alt="Foto de Rosa Inés Martínez"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Rosa Inés Martínez</p>
+              <p class="text-xs text-[#1F1F1F]/60">Bogotá, Colombia</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "Cobraba $15 por una matriz suelta. Aquí llevé más de 100 por menos de $20.
+            No tenía idea de que existía algo así."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/79.jpg"
+                 alt="Foto de Doña Cleide Ramírez"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Cleide Ramírez</p>
+              <p class="text-xs text-[#1F1F1F]/60">Lima, Perú</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "Hago paramentos para la parroquia de mi pueblo. La categoría de
+            símbolos litúrgicos me salvó en un pedido grande de Pascua."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/52.jpg"
+                 alt="Foto de Patricia Hernández"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Patricia Hernández</p>
+              <p class="text-xs text-[#1F1F1F]/60">Monterrey, México</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "Compré pensando que serían diseños básicos y me sorprendí.
+            Hay variedad para Vírgenes, Santos y hasta para primera comunión."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/33.jpg"
+                 alt="Foto de Lucía Gómez"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Lucía Gómez</p>
+              <p class="text-xs text-[#1F1F1F]/60">Buenos Aires, Argentina</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "Pagué en pesos directo desde mi tarjeta. Llegó al correo al instante.
+            Las matrices abrieron perfecto en mi Brother."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/90.jpg"
+                 alt="Foto de Esperanza Vargas"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Esperanza Vargas</p>
+              <p class="text-xs text-[#1F1F1F]/60">Quito, Ecuador</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "Vendía 3 piezas por semana. Después de variar los diseños del acervo
+            ya estoy vendiendo 10. Vale cada centavo."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="bg-cream py-20 px-5">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx text-center
+                 text-[28px] sm:text-[36px] md:text-[44px] leading-tight">
+        Preguntas frecuentes
+      </h2>
+
+      <div class="mt-10 space-y-4">
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            ¿Funciona en mi máquina?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Sí. Las matrices vienen en los formatos más usados: .PES (Brother), .DST (Tajima),
+            .JEF (Janome), .EXP (Bernina) y .VP3 (Husqvarna). Atiende doméstica y profesional.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            ¿Cómo recibo el acervo después de la compra?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            El acceso se libera <strong>al instante</strong> en tu correo. Recibes un enlace
+            para descargar todos los archivos organizados en carpetas por categoría.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            ¿Puedo pagar en mi moneda local?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Sí. El pago se procesa por Hotmart, que convierte el valor automáticamente a la
+            moneda de tu país (peso mexicano, peso colombiano, peso argentino, sol, real, etc.).
+            Puedes pagar con tarjeta local, PIX, OXXO, SPEI, PSE y otros métodos.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            ¿Puedo usar las matrices para vender productos bordados?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Sí. La licencia es para uso personal y comercial — puedes bordar y vender
+            las piezas. Lo que no se permite es revender las matrices en sí.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            ¿Y si no me gusta?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            En hasta 7 días pides el reembolso y recibes el 100% del valor de vuelta.
+            Sin justificar nada. El riesgo lo asumimos nosotros.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            ¿Este precio de USD $7,90 es solo hoy?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Sí. Es una condición promocional de lanzamiento. Cuando la oferta termine,
+            el acervo vuelve al valor completo. Si demoras en decidir, vas a pagar más.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="bg-primary py-20 px-5 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-heading font-extrabold uppercase text-white tracking-tightx
+                 text-[28px] sm:text-[38px] md:text-[48px] leading-[1.05]">
+        Tienes dos opciones ahora
+      </h2>
+      <p class="mt-8 text-white/80 text-lg sm:text-xl leading-relaxed">
+        <strong>Opción 1:</strong> cerrar esta página, seguir buscando matrices en WhatsApp y
+        perdiendo clientes por falta de diseño.
+      </p>
+      <p class="mt-4 text-white/80 text-lg sm:text-xl leading-relaxed">
+        <strong>Opción 2:</strong> invertir menos que un café y tener <strong>+100 matrices
+        sagradas + 5 bonos (incluyendo diseños litúrgicos exclusivos)</strong> en el celular hoy mismo.
+      </p>
+
+      <a href="#oferta"
+         class="cta-pulse inline-block mt-10 bg-success hover:bg-[#137A00] text-white font-bold uppercase
+                rounded-xl px-8 py-5 text-lg sm:text-xl tracking-tightx transition-colors leading-tight">
+        QUIERO MI ACERVO POR USD $7,90<br/>
+        <span class="text-sm font-semibold normal-case opacity-90">Pago en tu moneda local</span>
+      </a>
+
+      <p class="mt-5 text-white/60 text-sm">
+        Pago 100% seguro • Acceso inmediato • 7 días de garantía
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-[#0e1f33] text-white/70 py-10 px-5 text-center text-sm">
+    <p>© <span id="ano"></span> Acervo Devocional de Bordados Sagrados. Todos los derechos reservados.</p>
+    <p class="mt-2">
+      Este sitio no forma parte de Facebook, Instagram o Google. Los testimonios reflejan
+      experiencias individuales y no garantizan resultados.
+    </p>
+    <p class="mt-4 space-x-3">
+      <a href="#" class="hover:text-white">Términos de uso</a>
+      <span>•</span>
+      <a href="#" class="hover:text-white">Política de privacidad</a>
+      <span>•</span>
+      <a href="#" class="hover:text-white">Soporte</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // Carrossel "o que recebe"
+    (function () {
+      const carousel = document.getElementById('receive-carousel');
+      const prev = document.getElementById('carousel-prev');
+      const next = document.getElementById('carousel-next');
+      if (!carousel) return;
+      function scrollStep(direction) {
+        const card = carousel.querySelector('.snap-center');
+        const gap = 24;
+        const step = card ? card.offsetWidth + gap : 300;
+        carousel.scrollBy({ left: direction * step, behavior: 'smooth' });
+      }
+      prev && prev.addEventListener('click', () => scrollStep(-1));
+      next && next.addEventListener('click', () => scrollStep(1));
+    })();
+  </script>
+</body>
+</html>
