@@ -15,40 +15,16 @@
   <link rel="dns-prefetch" href="https://cdn.utmify.com.br" />
   <link rel="dns-prefetch" href="https://randomuser.me" />
 
-  <!-- Preload LCP (hero image) -->
-  <link rel="preload" as="image" href="variacao_dibujos_catolicos_es.webp" fetchpriority="high" />
+  <!-- Preload LCP (hero image) com srcset responsivo -->
+  <link rel="preload" as="image"
+        imagesrcset="variacao_dibujos_catolicos_es-600.webp 600w, variacao_dibujos_catolicos_es.webp 1200w"
+        imagesizes="(max-width: 640px) 100vw, 512px"
+        fetchpriority="high" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary:   '#1E3A5F',
-            secondary: '#EE6352',
-            success:   '#189700',
-            cream:     '#F6F3EC',
-            skyfade:   '#E8F1FF',
-            surface:   '#EFF1F5',
-          },
-          fontFamily: {
-            sans:    ['Manrope', 'sans-serif'],
-            heading: ['Inter', 'sans-serif'],
-          },
-          letterSpacing: { tightx: '-0.1px' },
-          boxShadow: {
-            soft:  '0 40px 80px rgba(217, 119, 87, 0.24)',
-            card:  '0 10px 30px rgba(30, 58, 95, 0.10)',
-            cta:   '0 12px 24px rgba(24, 151, 0, 0.35)',
-          },
-        },
-      },
-    };
-  </script>
-
+  <link rel="stylesheet" href="styles.css" />
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Manrope', sans-serif; color: #111; }
@@ -60,22 +36,6 @@
       50%      { transform: scale(1.03); box-shadow: 0 16px 32px rgba(24,151,0,0.5); }
     }
     .pill { border-radius: 180px; }
-    .placeholder-img {
-      background: repeating-linear-gradient(45deg, #f0e9d6, #f0e9d6 12px, #e6dec5 12px, #e6dec5 24px);
-      display: flex; align-items: center; justify-content: center;
-      color: #1E3A5F; font-weight: 700;
-    }
-    /* Carrossel */
-    .scrollbar-hide::-webkit-scrollbar { display: none; }
-    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-    .carousel-arrow {
-      background: #fff; color: #1E3A5F; width: 48px; height: 48px;
-      border-radius: 9999px; display: none; align-items: center; justify-content: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-      transition: transform .2s ease;
-    }
-    .carousel-arrow:hover { transform: scale(1.1); }
-    @media (min-width: 768px) { .carousel-arrow { display: flex; } }
   </style>
 
   <!-- Meta Pixel Code -->
@@ -140,6 +100,8 @@
     <!-- Mockup do produto -->
     <div class="mt-10 w-full max-w-lg">
       <img src="variacao_dibujos_catolicos_es.webp"
+           srcset="variacao_dibujos_catolicos_es-600.webp 600w, variacao_dibujos_catolicos_es.webp 1200w"
+           sizes="(max-width: 640px) 100vw, 512px"
            alt="+100 Dibujos Católicos — Acervo Devocional de Bordados Sagrados"
            width="1200" height="1200"
            class="w-full h-auto rounded-2xl shadow-soft"
@@ -277,27 +239,27 @@
     <!-- Grid 3x2 (6 imagens) -->
     <div class="mt-12 max-w-5xl mx-auto px-5">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.webp"
+        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.webp" srcset="imagens/855191d358ea0788366f3c1b5713f3b3-280.webp 280w, imagens/855191d358ea0788366f3c1b5713f3b3.webp 560w" sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 300px"
              alt="Bordado católico — diseño 1" loading="lazy" decoding="async"
              width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/986d5279e1fd90e39ab8a3e77f86ef9b.webp"
+        <img src="imagens/986d5279e1fd90e39ab8a3e77f86ef9b.webp" srcset="imagens/986d5279e1fd90e39ab8a3e77f86ef9b-280.webp 280w, imagens/986d5279e1fd90e39ab8a3e77f86ef9b.webp 560w" sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 300px"
              alt="Bordado católico — diseño 2" loading="lazy" decoding="async"
              width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/image-1.webp"
+        <img src="imagens/image-1.webp" srcset="imagens/image-1-280.webp 280w, imagens/image-1.webp 560w" sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 300px"
              alt="Bordado católico — diseño 3" loading="lazy" decoding="async"
              width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/image-2.webp"
+        <img src="imagens/image-2.webp" srcset="imagens/image-2-280.webp 280w, imagens/image-2.webp 560w" sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 300px"
              alt="Bordado católico — diseño 4" loading="lazy" decoding="async"
              width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/image-4.webp"
+        <img src="imagens/image-4.webp" srcset="imagens/image-4-280.webp 280w, imagens/image-4.webp 560w" sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 300px"
              alt="Bordado católico — diseño 5" loading="lazy" decoding="async"
              width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.webp"
+        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.webp" srcset="imagens/855191d358ea0788366f3c1b5713f3b3-280.webp 280w, imagens/855191d358ea0788366f3c1b5713f3b3.webp 560w" sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 300px"
              alt="Bordado católico — diseño 6" loading="lazy" decoding="async"
              width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
@@ -496,6 +458,8 @@
         <!-- Imagem do produto -->
         <div class="mt-4 max-w-sm mx-auto">
           <img src="oferta-card.webp"
+               srcset="oferta-card-400.webp 400w, oferta-card.webp 800w"
+               sizes="(max-width: 640px) 90vw, 384px"
                alt="+100 Dibujos Católicos — Paquete completo"
                width="800" height="999"
                class="w-full h-auto rounded-xl shadow-card"
@@ -842,24 +806,6 @@
     </p>
   </footer>
 
-  <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-
-    // Carrossel "o que recebe"
-    (function () {
-      const carousel = document.getElementById('receive-carousel');
-      const prev = document.getElementById('carousel-prev');
-      const next = document.getElementById('carousel-next');
-      if (!carousel) return;
-      function scrollStep(direction) {
-        const card = carousel.querySelector('.snap-center');
-        const gap = 24;
-        const step = card ? card.offsetWidth + gap : 300;
-        carousel.scrollBy({ left: direction * step, behavior: 'smooth' });
-      }
-      prev && prev.addEventListener('click', () => scrollStep(-1));
-      next && next.addEventListener('click', () => scrollStep(1));
-    })();
-  </script>
+  <script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
 </body>
 </html>
