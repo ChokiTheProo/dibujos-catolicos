@@ -6,9 +6,20 @@
   <meta name="description" content="Acervo Devocional de Bordados Sagrados — más de 100 matrices de bordado católico listas para usar en cualquier máquina. Acceso de por vida desde USD $7,90." />
   <title>Acervo Devocional de Bordados Sagrados — Más de 100 Matrices Listas</title>
 
+  <!-- Resource hints (performance) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://pay.hotmart.com" />
+  <link rel="dns-prefetch" href="https://pay.hotmart.com" />
+  <link rel="dns-prefetch" href="https://connect.facebook.net" />
+  <link rel="dns-prefetch" href="https://cdn.utmify.com.br" />
+  <link rel="dns-prefetch" href="https://randomuser.me" />
+
+  <!-- Preload LCP (hero image) -->
+  <link rel="preload" as="image" href="variacao_dibujos_catolicos_es.webp" fetchpriority="high" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -128,10 +139,11 @@
 
     <!-- Mockup do produto -->
     <div class="mt-10 w-full max-w-lg">
-      <img src="variacao_dibujos_catolicos_es.png"
+      <img src="variacao_dibujos_catolicos_es.webp"
            alt="+100 Dibujos Católicos — Acervo Devocional de Bordados Sagrados"
+           width="1200" height="1200"
            class="w-full h-auto rounded-2xl shadow-soft"
-           loading="eager" />
+           loading="eager" fetchpriority="high" decoding="async" />
     </div>
 
     <a href="#oferta"
@@ -265,23 +277,29 @@
     <!-- Grid 3x2 (6 imagens) -->
     <div class="mt-12 max-w-5xl mx-auto px-5">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.jpeg"
-             alt="Bordado católico — diseño 1" loading="lazy"
+        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.webp"
+             alt="Bordado católico — diseño 1" loading="lazy" decoding="async"
+             width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/986d5279e1fd90e39ab8a3e77f86ef9b.jpeg"
-             alt="Bordado católico — diseño 2" loading="lazy"
+        <img src="imagens/986d5279e1fd90e39ab8a3e77f86ef9b.webp"
+             alt="Bordado católico — diseño 2" loading="lazy" decoding="async"
+             width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/image-1.jpeg"
-             alt="Bordado católico — diseño 3" loading="lazy"
+        <img src="imagens/image-1.webp"
+             alt="Bordado católico — diseño 3" loading="lazy" decoding="async"
+             width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/image-2.jpeg"
-             alt="Bordado católico — diseño 4" loading="lazy"
+        <img src="imagens/image-2.webp"
+             alt="Bordado católico — diseño 4" loading="lazy" decoding="async"
+             width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/image-4.jpeg"
-             alt="Bordado católico — diseño 5" loading="lazy"
+        <img src="imagens/image-4.webp"
+             alt="Bordado católico — diseño 5" loading="lazy" decoding="async"
+             width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
-        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.jpeg"
-             alt="Bordado católico — diseño 6" loading="lazy"
+        <img src="imagens/855191d358ea0788366f3c1b5713f3b3.webp"
+             alt="Bordado católico — diseño 6" loading="lazy" decoding="async"
+             width="560" height="560"
              class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
       </div>
     </div>
@@ -477,10 +495,11 @@
 
         <!-- Imagem do produto -->
         <div class="mt-4 max-w-sm mx-auto">
-          <img src="fcf709ec-7e60-44c0-97c7-3eb8569a7ae2.png"
+          <img src="oferta-card.webp"
                alt="+100 Dibujos Católicos — Paquete completo"
+               width="800" height="999"
                class="w-full h-auto rounded-xl shadow-card"
-               loading="lazy" />
+               loading="lazy" decoding="async" />
         </div>
 
         <h3 class="font-heading font-extrabold text-primary text-center text-2xl sm:text-3xl mt-6">
@@ -590,7 +609,7 @@
             <img src="https://randomuser.me/api/portraits/women/68.jpg"
                  alt="Foto de María de los Ángeles"
                  class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
-                 loading="lazy" />
+                 width="128" height="128" loading="lazy" decoding="async" />
             <div>
               <p class="font-bold text-primary leading-tight">María de los Ángeles</p>
               <p class="text-xs text-[#1F1F1F]/60">Guadalajara, México</p>
@@ -608,7 +627,7 @@
             <img src="https://randomuser.me/api/portraits/women/45.jpg"
                  alt="Foto de Rosa Inés Martínez"
                  class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
-                 loading="lazy" />
+                 width="128" height="128" loading="lazy" decoding="async" />
             <div>
               <p class="font-bold text-primary leading-tight">Rosa Inés Martínez</p>
               <p class="text-xs text-[#1F1F1F]/60">Bogotá, Colombia</p>
@@ -626,7 +645,7 @@
             <img src="https://randomuser.me/api/portraits/women/79.jpg"
                  alt="Foto de Doña Cleide Ramírez"
                  class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
-                 loading="lazy" />
+                 width="128" height="128" loading="lazy" decoding="async" />
             <div>
               <p class="font-bold text-primary leading-tight">Cleide Ramírez</p>
               <p class="text-xs text-[#1F1F1F]/60">Lima, Perú</p>
@@ -644,7 +663,7 @@
             <img src="https://randomuser.me/api/portraits/women/52.jpg"
                  alt="Foto de Patricia Hernández"
                  class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
-                 loading="lazy" />
+                 width="128" height="128" loading="lazy" decoding="async" />
             <div>
               <p class="font-bold text-primary leading-tight">Patricia Hernández</p>
               <p class="text-xs text-[#1F1F1F]/60">Monterrey, México</p>
@@ -662,7 +681,7 @@
             <img src="https://randomuser.me/api/portraits/women/33.jpg"
                  alt="Foto de Lucía Gómez"
                  class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
-                 loading="lazy" />
+                 width="128" height="128" loading="lazy" decoding="async" />
             <div>
               <p class="font-bold text-primary leading-tight">Lucía Gómez</p>
               <p class="text-xs text-[#1F1F1F]/60">Buenos Aires, Argentina</p>
@@ -680,7 +699,7 @@
             <img src="https://randomuser.me/api/portraits/women/90.jpg"
                  alt="Foto de Esperanza Vargas"
                  class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
-                 loading="lazy" />
+                 width="128" height="128" loading="lazy" decoding="async" />
             <div>
               <p class="font-bold text-primary leading-tight">Esperanza Vargas</p>
               <p class="text-xs text-[#1F1F1F]/60">Quito, Ecuador</p>
