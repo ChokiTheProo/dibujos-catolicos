@@ -490,24 +490,41 @@
           <p class="text-sm text-[#1F1F1F]/70 mt-1">Pago único · acceso de por vida</p>
 
           <!-- Conversões pra moedas locais -->
-          <div class="mt-5 bg-cream rounded-xl p-4 border border-primary/10">
-            <p class="text-xs uppercase font-bold tracking-widest text-primary/70 mb-2">
-              También aceptamos tu moneda local
+          <div class="mt-6 bg-gradient-to-br from-cream to-skyfade rounded-2xl p-5 border-2 border-primary/20 shadow-sm">
+            <p class="text-sm uppercase font-extrabold tracking-widest text-primary mb-4 text-center">
+              ✓ También aceptamos tu moneda local
             </p>
-            <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm">
-              <span class="inline-flex items-center gap-2 font-semibold text-primary">
-                <span aria-hidden="true">🇨🇴</span>
-                <strong>$28.719 COP</strong>
-                <span class="text-[#1F1F1F]/60 font-normal">(Colombia)</span>
-              </span>
-              <span class="inline-flex items-center gap-2 font-semibold text-primary">
-                <span aria-hidden="true">🇲🇽</span>
-                <strong>$170,52 MXN</strong>
-                <span class="text-[#1F1F1F]/60 font-normal">(México)</span>
-              </span>
+            <div class="grid grid-cols-2 gap-3">
+              <!-- Colombia -->
+              <div class="bg-white rounded-xl p-4 shadow-card text-center">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                  <span class="inline-flex w-8 h-5 rounded-sm overflow-hidden border border-gray-200 shadow-sm flex-col" aria-hidden="true">
+                    <span class="bg-[#FCD116] h-1/2 block"></span>
+                    <span class="bg-[#003893] block" style="height:25%"></span>
+                    <span class="bg-[#CE1126] block" style="height:25%"></span>
+                  </span>
+                  <span class="text-xs font-bold text-[#1F1F1F]/70 uppercase tracking-wide">Colombia</span>
+                </div>
+                <p class="font-heading font-extrabold text-primary text-xl sm:text-2xl leading-none">$28.719</p>
+                <p class="text-xs font-bold text-[#1F1F1F]/60 mt-1 tracking-wide">COP</p>
+              </div>
+
+              <!-- Mexico -->
+              <div class="bg-white rounded-xl p-4 shadow-card text-center">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                  <span class="inline-flex w-8 h-5 rounded-sm overflow-hidden border border-gray-200 shadow-sm" aria-hidden="true">
+                    <span class="bg-[#006847] w-1/3 block"></span>
+                    <span class="bg-white w-1/3 block"></span>
+                    <span class="bg-[#CE1126] w-1/3 block"></span>
+                  </span>
+                  <span class="text-xs font-bold text-[#1F1F1F]/70 uppercase tracking-wide">México</span>
+                </div>
+                <p class="font-heading font-extrabold text-primary text-xl sm:text-2xl leading-none">$170,52</p>
+                <p class="text-xs font-bold text-[#1F1F1F]/60 mt-1 tracking-wide">MXN</p>
+              </div>
             </div>
-            <p class="text-xs text-[#1F1F1F]/60 mt-2 italic">
-              Conversión automática en el checkout · tasas pueden variar
+            <p class="text-xs text-[#1F1F1F]/60 mt-4 italic text-center">
+              💳 Conversión automática en el checkout · tasas pueden variar
             </p>
           </div>
         </div>
